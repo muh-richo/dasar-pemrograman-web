@@ -3,6 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <title>Halaman Profil Bandung</title>
+
+    <!-- My Own Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" 
+      rel="stylesheet"
+    >
   </head>
 
   <body>
@@ -31,9 +42,9 @@
     <main>
       <!-- Konten Artikel -->
       <div id="content">
-        <article id="sejarah">
+        <article id="sejarah" class="card">
           <h2>Sejarah</h2>
-          <img src="assets/image/history.jpg" alt="Sejarah" />
+          <img src="assets/image/history.jpg" alt="Sejarah" class="featured-image" />
           <p>
             Kata Bandung berasal dari kata bendung atau bendungan karena terbendungnya sungai Citarum oleh
             lava Gunung Tangkuban Parahu yang lalu membentuk telaga. Legenda yang diceritakan oleh
@@ -53,9 +64,9 @@
           </p>
         </article>
     
-        <article id="geografis">
+        <article id="geografis" class="card">
           <h2>Geografis</h2>
-          <img src="assets/image/geografis.jpg" alt="Geografis">
+          <img src="assets/image/geografis.jpg" alt="Geografis" class="featured-image" >
           <p>
             Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya bagaikan sebuah
             mangkok raksasa, secara geografis kota ini terletak di tengah-tengah provinsi Jawa Barat,
@@ -72,7 +83,7 @@
           </p>
         </article>
     
-        <article id="wisata">
+        <article id="wisata" class="card">
           <h2>Wisata</h2>
           <p>
             Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama dalam menikmati
@@ -83,19 +94,18 @@
       
           <section>
             <h3>Farm House Lembang</h3>
-            <img src="assets/image/farm-house.jpg" alt="Farm House">
+            <img src="assets/image/farm-house.jpg" alt="Farm House" class="featured-image" >
             <p>
-              Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya bagaikan sebuah
-              mangkok raksasa,[9] secara geografis kota ini terletak di tengah-tengah provinsi Jawa Barat,
-              serta berada pada ketinggian ±768 m di atas permukaan laut, dengan titik tertinggi di berada
-              di sebelah utara dengan ketinggian 1.050 meter di atas permukaan laut dan sebelah selatan
-              merupakan kawasan rendah dengan ketinggian 675 meter di atas permukaan laut.
+              Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak
+              pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga
+              menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto
+              Instagramable.
             </p>
           </section>
       
           <section>
             <h3>Observatorium Bosscha</h3>
-            <img src="assets/image/bosscha.jpg" alt="Observatorium Booscha">
+            <img src="assets/image/bosscha.jpg" alt="Observatorium Booscha" class="featured-image" >
             <p>
               Memiliki beberapa teleskop, antara lain, Refraktor Ganda Zeiss, Schmidt Bimasakti, Refraktor
               Bamberg, Cassegrain GOTO, dan Teleskop Surya. Refraktor Ganda Zeiss adalah jenis teleskop
@@ -111,19 +121,49 @@
 
       <!-- Konten Samping -->
       <aside>
-        <article>
-          <h2>Kota Bandung</h2>
-          <p>Kota Kembang Paris van Java</p>
-          <figure>
-            <img src="assets/image/bandung-badge.png" />
-            <figcaption>Lambang</figcaption>
-          </figure>
+        <article class="profile" class="profile card">
+          <header>
+            <h2>Kota Bandung</h2>
+            <p>Kota Kembang Paris van Java</p>
+            <figure>
+              <img src="assets/image/bandung-badge.png" />
+              <figcaption>Lambang</figcaption>
+            </figure>
+          </header>
+
+          <section>
+            <!-- Konten-konten baru -->
+            <h3>Informasi Lainnya</h3>
+
+            <table>
+              <tr>
+                <th>Negara</th>
+                <td>Indonesia</td>
+              </tr>
+              <tr>
+                <th>Hari Jadi</th>
+                <td>25 September 1810</td>
+              </tr>
+              <tr>
+                <th>Luas Total</th>
+                <td>167.67 km<sup>2</sup></td>
+              </tr>
+              <tr>
+                <th>Bahasa Daerah</th>
+                <td>Sunda</td>
+              </tr>
+              <tr>
+                <th>Kode Telepon</th>
+                <td>+62 22</td>
+              </tr>
+            </table>
+          </section>
         </article>
       </aside>
     </main>
 
     <footer>
-      <p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
+      <p>Belajar Dasar Pemrograman Web &copy; 2023, Dicoding</p>
     </footer>
   </body>
 </html>
