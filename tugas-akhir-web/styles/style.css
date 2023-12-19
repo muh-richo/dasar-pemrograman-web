@@ -60,7 +60,7 @@ header.navbar-container .nav-list li:hover a {
 }
 
 footer {
-    padding: 20px;
+    padding: 5px;
     color: white;
     background-color: #00aaffd3;
     text-align: center;
@@ -90,11 +90,48 @@ main {
     justify-content: space-around; /* Menyusun item dengan ruang sekitar */
     align-items: center;
 
-    height: 85vh;
+    height: 100vh;
 }
 
 .fitur{
-    height: 85vh;
+    background-color: aquamarine;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+.desc {
+    background-color: red;
+    padding-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex {
+    width: 100%;
+    display: flex;
+
+    margin-inline: auto;
+    justify-content: space-around;
+}
+
+.card {
+    width: 150px;
+    background-color: blue;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    padding: 20px;
+}
+
+.tentang-kami {
+    background-color: cyan;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
