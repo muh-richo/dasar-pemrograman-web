@@ -326,6 +326,7 @@ main aside .social-media li a {
 
 main aside .social-media li img {
     width: 30px;
+    opacity: 80%;
     height: auto;
     display: block;
     margin: auto;
