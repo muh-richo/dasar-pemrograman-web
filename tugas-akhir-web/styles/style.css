@@ -49,20 +49,20 @@ header.navbar-container .nav-list li a {
     text-decoration: none;
     font-size: 1.05rem;
     font-weight: 500;
-    color: #00A9FF;
+    color: #00a2ff;
     
     transition: all 0.2s ease-in-out;
 }
 
 header.navbar-container .nav-list li:hover a {
-    background-color: #00aaffd3;
+    background-color: #006eff;
     color: white;
 }
 
 footer {
     padding: 5px;
     color: white;
-    background-color: #00aaffd3;
+    background-color: #006effde;
     text-align: center;
     font-weight: bold;
     font-size: 16pt;
@@ -78,13 +78,6 @@ main {
     display: flex;  align-items: center;
 }
 
-/* main .content {
-    flex: 1;
-    
-    display: flex;
-    align-items: center;
-} */
-
 .beranda{
     display: flex; /* Menerapkan flexbox pada container */
     justify-content: space-around; /* Menyusun item dengan ruang sekitar */
@@ -94,14 +87,13 @@ main {
 }
 
 .fitur{
-    /* background-color: aquamarine; */
     height: 100vh;
     display: flex;
     align-items: flex-start;
 }
 
 .desc {
-    /* background-color: darkseagreen; */
+    width: 100%;
     padding-top: 150px;
     padding: 150px 20px 150px 20px;
 
@@ -114,7 +106,7 @@ main {
 
 .desc h2 {
     color: #00A9FF;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
@@ -122,11 +114,16 @@ main {
     text-align: center;
 }
 
+.desc .p-desc {
+    font-size: 14pt;
+}
+
 .d-flex {
     width: 100%;
     display: flex;
 
-    padding-top: 50px;
+    padding-top: 75px;
+    padding-bottom: 50px;
 
     margin-inline: auto;
     justify-content: space-around;
@@ -135,7 +132,6 @@ main {
 .card {
     width: 200px;
     height: 300px;
-    /* background-color: blue; */
     
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -156,7 +152,7 @@ h3 {
     width: 70px;
     height: 70px;
     padding: 10px;
-    /* background-color: #3498db; */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,10 +169,42 @@ h3 {
 }
 
 .tentang-kami {
-    background-color: cyan;
+    /* background-color: cyan; */
     height: 100vh;
     display: flex;
     align-items: center;
+}
+
+.profile-card {
+    width: 250px;
+    height: 400px;
+    /* background-color: blue; */
+    
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.circle-frame {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.circle-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
+    border-radius: 50%;
 }
 
 main .content .beranda .content-description {
@@ -202,7 +230,7 @@ main .content .content-description button {
     border-radius: 999px;
     margin-block-start: 1rem;
     
-    background-color: #00aaffd3;
+    background-color: #006effc0;
     
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
@@ -219,4 +247,44 @@ main .content .content-description button:hover {
     background-color: transparent;
     
     color: #00A9FF;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #006eff;
+    
+    display: flex;  flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    
+    transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+    color: #89b0d9;
 }
